@@ -1,12 +1,11 @@
 import PropTypes from 'prop-types';
-import { ContactItem, ContactButton } from './Contact.styled';
+import { ContactInfo } from './Contact.styled';
 
 export const Contact = ({id, name, number}) => {
     return (
-        <ContactItem>
+        <ContactInfo>
             {name}: {number}
-            <ContactButton type="button" data-id={id}>Delete</ContactButton>
-        </ContactItem>
+        </ContactInfo>
     )
 }
 
